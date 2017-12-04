@@ -4,8 +4,8 @@
 # Mail: libo214@gmail.com
 #
 
-find . -type d ! -path "*.git*" -empty -exec echo {} \;
+find $PWD/src/ -type d ! -path "*.git*" -empty -exec echo {} \;
 
-find . -type d ! -path "*.git*" -empty -exec touch {}/.gitignore \;
+find $PWD/src/ -type d ! -path "*.git*" -empty -exec touch {}/.gitignore \;
 
 exit
